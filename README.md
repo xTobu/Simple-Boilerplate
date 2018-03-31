@@ -1,5 +1,5 @@
 # Simple-Webpack-Boilerplate  
-> 大家都說 ES6 很簡單, 我看倒像塊綠豆糕
+> A lightweight boilerplate with ES6
   
 ![Author](https://img.shields.io/badge/Author-Junxiang-yellow.svg)   
 ![Version](https://img.shields.io/badge/Version-0.1.0-blue.svg)
