@@ -1,0 +1,29 @@
+{
+  "name": "learn-webpack",
+  "version": "0.1.0",
+  "description": "simple webpack boilerplate",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --mode development",
+    "prod": "webpack --mode production"
+  },
+  "author": "Junxiang",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.8.3",
+    "prettier": "^1.9.2",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.3.0",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  }
+}

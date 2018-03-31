@@ -1,0 +1,13 @@
+
+body {
+	background-color: bisque;
+}
+div.index {
+	position: absolute;
+	z-index: 100;
+	background: url('../img/pattern.png') transparent repeat;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
