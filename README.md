@@ -1,5 +1,5 @@
 # Simple-Webpack-Boilerplate  
-> A lightweight boilerplate with ES6
+> A lightweight boilerplate with ES6  
 > For WebGene technical team  
 
 ![Author](https://img.shields.io/badge/Author-Junxiang-yellow.svg)   
