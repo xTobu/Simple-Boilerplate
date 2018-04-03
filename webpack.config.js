@@ -78,8 +78,22 @@ module.exports = {
 	devtool: 'source-map',
 	devServer: {
 		port: 8000,
-		hot: true, // 不需要
-		inline: true, // 不需要
 		//noInfo: true,
 	},
 };
+
+if (process.env.NODE_ENV === 'production') {
+	// change publicPath to './dist/' when env is production
+	module.exports.output.publicPath = './dist/';
+	module.exports.plugins = (module.exports.plugins || []).concat([
+		new webpack.DefinePlugin({
+			'process.env': {
+				NODE_ENV: '"production"',
+			},
+		}),
+
+		new webpack.LoaderOptionsPlugin({
+			minimize: true,
+		}),
+	]);
+}

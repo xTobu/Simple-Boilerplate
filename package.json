@@ -5,12 +5,13 @@
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --mode development --inline",
-    "prod": "webpack --mode production"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --inline",
+    "prod": "cross-env NODE_ENV=production webpack --mode production"
   },
   "author": "Junxiang",
   "license": "ISC",
   "devDependencies": {
+    "cross-env": "^5.0.5",
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-preset-es2015": "^6.24.1",
