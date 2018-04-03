@@ -8,7 +8,7 @@ import gopher_src from './assets/img/gopher.png';
 
 console.log('src/index');
 plus(1, 2);
-minus(3, 5);
+minus(3, 45);
 
 //iife
 (function() {

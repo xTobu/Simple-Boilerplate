@@ -2,7 +2,6 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-	
 	//很酷的寫法 用name來決定path
 	// entry: {
 	//   'build/application/bundle': './src/application', // will be  ./build/application/bundle.js,
@@ -20,9 +19,9 @@ module.exports = {
 	},
 	output: {
 		// when using multiple entry points
-		// Make sure to use [name] or [id] in output.filename		
+		// Make sure to use [name] or [id] in output.filename
 		path: path.resolve(__dirname, 'dist'),
-		publicPath: './dist/',
+		publicPath: '/dist/',
 		filename: '[name].bundle.js',
 	},
 	module: {
@@ -56,7 +55,6 @@ module.exports = {
 				options: {
 					name: '[name].[ext]?[hash]',
 				},
-				
 			},
 			{
 				// test: /\.(png|jpg|jpeg|gif|eot|ttf|woff|woff2|svg|svgz)(\?.+)?$/,
@@ -80,6 +78,8 @@ module.exports = {
 	devtool: 'source-map',
 	devServer: {
 		port: 8000,
+		hot: true, // 不需要
+		inline: true, // 不需要
 		//noInfo: true,
 	},
 };
