@@ -1,7 +1,7 @@
 {
-  "name": "learn-webpack",
+  "name": "simple-boilerplate",
   "version": "0.1.0",
-  "description": "simple webpack boilerplate",
+  "description": "A lightweight boilerplate with ES6",
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
