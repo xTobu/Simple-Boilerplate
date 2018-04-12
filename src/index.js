@@ -44,62 +44,60 @@ window.onload = () => {
 		document.getElementsByClassName('index')[0].appendChild(appendImg());
 	};
 
-	var axiosGetData = () => {
-		return new Promise((resolve, reject) => {
-			axios
-				.get('')
-				.then(function(response) {
-					//console.log(response.data);
-					resolve(response.data);
-				})
-				.catch(function(error) {
-					console.log(error);
-				});
-		});
-	};
+	// var axiosGetData = () => {
+	// 	return new Promise((resolve, reject) => {
+	// 		axios
+	// 			.get('')
+	// 			.then(function(response) {
+	// 				//console.log(response.data);
+	// 				resolve(response.data);
+	// 			})
+	// 			.catch(function(error) {
+	// 				console.log(error);
+	// 			});
+	// 	});
+	// };
 
-	axios
-		.get('')
-		.then(function(response) {
-			console.log(response.data);
-		})
-		.catch(function(error) {
-			console.log(error);
-		});
+	// axios
+	// 	.get('')
+	// 	.then(function(response) {
+	// 		console.log(response.data);
+	// 	})
+	// 	.catch(function(error) {
+	// 		console.log(error);
+	// 	});
 
-	var jsonBody = {};
+	// var jsonBody = {};
 
-	axios
-		.post(
-			'',
-			qs.stringify(jsonBody)
-		)
-		.then(function(response) {
-			console.log(response.data);
-		})
-		.catch(function(error) {
-			console.log(error);
-		});
+	// axios
+	// 	.post('', qs.stringify(jsonBody))
+	// 	.then(function(response) {
+	// 		console.log(response.data);
+	// 	})
+	// 	.catch(function(error) {
+	// 		console.log(error);
+	// 	});
 
-	$.ajax({
-		processData: false,
-		type: 'POST',
-		url: '',
-		dataType: 'json',
-		contentType: 'application/json; charset=utf-8',
-		data: JSON.stringify(jsonBody),
-		success: function(data) {
-			console.log('device control succeeded');
-		},
-		error: function() {
-			console.log('Device control failed');
-		},
-	});
-	async function get() {
-		const x = await axios.get(
+	// $.ajax({
+	// 	processData: false,
+	// 	type: 'POST',
+	// 	url: '',
+	// 	dataType: 'json',
+	// 	contentType: 'application/json; charset=utf-8',
+	// 	data: JSON.stringify(jsonBody),
+	// 	success: function(data) {
+	// 		console.log('device control succeeded');
+	// 	},
+	// 	error: function() {
+	// 		console.log('Device control failed');
+	// 	},
+	// });
+
+	var get = async () => {
+		const r = await axios.get(
 			''
 		);
-		console.log(x.data);
-	}
+		console.log(r.data);
+	};
 	get();
 };
