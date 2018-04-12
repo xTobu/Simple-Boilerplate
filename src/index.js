@@ -8,7 +8,7 @@ import gopher_src from './assets/img/gopher.png';
 
 console.log('src/index');
 plus(1, 2);
-minus(3,1);
+minus(3, 1);
 
 //iife
 (function() {
@@ -23,7 +23,6 @@ $(function() {
 	// 	console.log(e.currentTarget);
 	// 	document.body.appendChild(appendImg());
 	// });
-
 });
 
 //onload
