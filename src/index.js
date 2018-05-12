@@ -1,3 +1,6 @@
+// 相容至 IE8
+import 'es6-promise/auto'
+
 import $ from 'jquery';
 import axios from 'axios';
 import qs from 'qs';
